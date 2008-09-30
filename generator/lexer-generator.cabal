@@ -1,0 +1,17 @@
+Name:               haskell-lexer
+Version:            1.0
+License:            BSD3
+License-file:       LICENSE
+Extra-source-files: LICENSE, README
+Author:             Thomas Hallgren
+Maintainer:         diatchki@galois.com
+Category:           Language
+Synopsis:           A program that can generate a Haskell lexer.
+Build-type:         Simple
+cabal-version:      >= 1.2
+
+executable lexer-generator
+  main-is:          Main.hs
+  hs-source-dirs:   src ..
+  build-Depends:    base, containers
+

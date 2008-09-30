@@ -1,0 +1,10 @@
+This program is used to generate the lexer used by the haskell-lexer package.
+To modify the lexer:
+  1. modify the modules in the "Spec" sub-directory as neccessary,
+  2. recompile and run the generator,
+  3. replace the module Language.Haskell.Lexer.Lex with the new code.
+
+NOTE:  The module Language.Haskell.Lexer.Tokens is shared between this program
+and the haskell-lexer library.  The current setup assumes that the source
+for this library is in the parent directory.
+
