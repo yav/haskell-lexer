@@ -183,7 +183,7 @@ haskellCharCase e rhs defaultrhs cases =
     tstFunc u =
       case u of
         UniWhite -> "isSpace"
-        UniSymbol -> "isSymbol"
+        UniSymbol -> "(\\x -> isSymbol x || isPunctuation x)"
         UniDigit -> "isDigit"
         UniLarge -> "isUpper"
         UniSmall -> "isLower"
