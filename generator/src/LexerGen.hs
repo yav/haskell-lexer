@@ -46,7 +46,9 @@ lexerGen moduleName functionName program args =
       where
         (eqs,dfa) = minimalize dfa0
 	haskellCode =
-          dfaToHaskell optccs moduleName ["Char","HsLexUtils"] functionName dfa
+          dfaToHaskell optccs moduleName
+                ["Data.Char"
+                ,"Language.Haskell.Lexer.Utils"] functionName dfa
 
 
 {-+
