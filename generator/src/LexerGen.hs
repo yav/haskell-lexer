@@ -34,18 +34,18 @@ lexerGen moduleName functionName program args =
         outputDetm (Just ccs) (n,renumberEdges ccs dfa)
       where
         charclasses = sort $ tokenClasses dfa
-	ccs = [(c,n)|(n,(cs,_))<-zip [(1::Int)..] charclasses,c<-cs]
+        ccs = [(c,n)|(n,(cs,_))<-zip [(1::Int)..] charclasses,c<-cs]
 
     outputDetm optccs dfa0 =
         if outDFA
-	then showDFA dfa
-	else "\n-- Automatically generated code for a DFA follows:\n" ++
-	     "--Equal states: "++show eqs++"\n"++
+        then showDFA dfa
+        else "\n-- Automatically generated code for a DFA follows:\n" ++
+             "--Equal states: "++show eqs++"\n"++
              "{-# OPTIONS_GHC -O #-}\n" ++
-	     pprint haskellCode
+             pprint haskellCode
       where
         (eqs,dfa) = minimalize dfa0
-	haskellCode =
+        haskellCode =
           dfaToHaskell optccs moduleName
                 ["Data.Char"
                 ,"Language.Haskell.Lexer.Utils"] functionName dfa
@@ -61,4 +61,4 @@ dfa2old dfa = ((1::Int,final),DFA (OM.fromList states))
     state (n,(_,edges)) = (n,(input,output))
       where
         input  = [(i,n)|(I i,n)<-edges]
-	output = [(o,n)|(O o,n)<-edges]
+        output = [(o,n)|(O o,n)<-edges]

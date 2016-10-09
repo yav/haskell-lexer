@@ -38,7 +38,7 @@ scall st err acc is = state st & err & acc & is -- state function call
 lhs st is = scall st "err" "as" is -- lhs of state function
 
 startstate st = "start"!st
-start st is = startstate st & is -- (re)start from state 
+start st is = startstate st & is -- (re)start from state
 startlhs st is = start st is -- lhs of state start function
 
 statesToHaskell final ccfun dfa =
@@ -86,7 +86,7 @@ stateToHaskell' (ccfun,Just allClasses) (iedges@(_:_),oedges) =
             iedges''))
   where
     (_,iedge'):iedges' = sortBy order $
-        		 collectBySnd [(c,lookup c iedges)|c<-allClasses]
+                  collectBySnd [(c,lookup c iedges)|c<-allClasses]
     order x y = let f = negate.length.fst in compare (f x) (f y)
     iedges'' = [(c,st)|(cs,st)<-iedges',c<-cs]
 
