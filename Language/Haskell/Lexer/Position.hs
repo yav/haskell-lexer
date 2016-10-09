@@ -25,7 +25,6 @@ nextPos1 (Pos n y x) c =
     case c of
       -- The characters newline, return, linefeed, and formfeed, all start
       -- a new line.
-      '\n'  -> Pos (n+1) (y+1) 1
       '\CR' -> Pos (n+1) (y+1) 1
       '\LF' -> Pos (n+1) (y+1) 1
       '\FF' -> Pos (n+1) (y+1) 1
