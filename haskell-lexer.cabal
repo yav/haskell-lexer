@@ -9,6 +9,8 @@ Synopsis:       A fully compliant Haskell 98 lexer.
 Description:    A fully compliant Haskell 98 lexer.
 Build-Depends:  base
 Build-type:     Simple
+Homepage:            https://github.com/yav/haskell-lexer
+Bug-reports:         https://github.com/yav/haskell-lexer/issues
 Extra-source-files: LICENSE
 Exposed-modules:  Language.Haskell.Lexer
 Other-modules:    Language.Haskell.Lexer.Layout,
