@@ -8,8 +8,8 @@ import Data.Maybe(fromMaybe)
 minimalize (s,DFA states) = iter [] (s,OM.toList states)
   where
     iter eqs dfa = case equalStates dfa of
-	             ([],(s,states)) -> (eqs,(s,DFA (OM.fromList states)))
-		     (eqs',dfa) -> iter (eqs':eqs) dfa
+                     ([],(s,states)) -> (eqs,(s,DFA (OM.fromList states)))
+                     (eqs',dfa) -> iter (eqs':eqs) dfa
 
 equalStates ((st,fin),states) =
     (eqclasses,((sren st,usort $ map sren fin),states'))
@@ -22,7 +22,7 @@ equalStates ((st,fin),states) =
      states' = map renState eqstates
 
      renState (s:_,(is,os)) = (s,(nubMapSnd sren is,nubMapSnd sren os))
-     renState _ = error $ "impossible (renState): " ++ 
+     renState _ = error $ "impossible (renState): " ++
                           "collectBySnd returned a list containing []"
 
      nubMapSnd f = usort . mapSnd f

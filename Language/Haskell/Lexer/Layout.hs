@@ -21,7 +21,7 @@ by {n} where n is the indentation of the lexeme.
 open1 :: [PosToken] -> [PosToken]
 open1 (t1@(Reservedid,(_,"module")):ts) = t1:open2 ts
 open1 (t1@(Special,(_,"{")):ts)         = t1:open2 ts
-open1 ts@((_,(p,_)):_)	                = (Open (column p),(p,"")):open2 ts
+open1 ts@((_,(p,_)):_)                  = (Open (column p),(p,"")):open2 ts
 open1 []                                = []
 
 {-+
