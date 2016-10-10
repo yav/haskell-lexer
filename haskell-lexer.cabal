@@ -7,17 +7,23 @@ Maintainer:     diatchki@galois.com
 Category:       Language
 Synopsis:       A fully compliant Haskell 98 lexer.
 Description:    A fully compliant Haskell 98 lexer.
-Build-Depends:  base
 Build-type:     Simple
+Cabal-version:  >= 1.2
+
 Homepage:            https://github.com/yav/haskell-lexer
 Bug-reports:         https://github.com/yav/haskell-lexer/issues
-Extra-source-files: LICENSE
-Exposed-modules:  Language.Haskell.Lexer
-Other-modules:    Language.Haskell.Lexer.Layout,
-                  Language.Haskell.Lexer.Tokens,
-                  Language.Haskell.Lexer.Lex,
-                  Language.Haskell.Lexer.Utils,
-                  Language.Haskell.Lexer.Position
 
-GHC-options:    -O2 -Wall
+Library
+  Build-Depends:  base
+  Exposed-modules:  Language.Haskell.Lexer
+  Other-modules:    Language.Haskell.Lexer.Layout,
+                    Language.Haskell.Lexer.Tokens,
+                    Language.Haskell.Lexer.Lex,
+                    Language.Haskell.Lexer.Utils,
+                    Language.Haskell.Lexer.Position
 
+  GHC-options:    -O2 -Wall
+
+source-repository head
+  type:     git
+  location: https://github.com/yav/haskell-lexer.git

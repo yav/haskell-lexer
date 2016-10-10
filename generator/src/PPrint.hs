@@ -70,7 +70,7 @@ pprint x = fmt0 0 (apply (pr x) [])
     --  + No indentation space on blank lines.
     --  + No trailing spaces at the end of lines.
     --  + No double spaces between items.
-    
+
     -- fmt0: at the beginning of a line, before indentation has been made
     fmt0 _ [] = []
     fmt0 n (Nl:os) = "\n"++fmt0 n os
@@ -84,16 +84,16 @@ pprint x = fmt0 0 (apply (pr x) [])
     fmt _ [] = []
     fmt n (o:os) =
       case o of
-	Str s -> s++fmt n os
-	Nl -> "\n"++fmt0 n os
-	Indent i -> fmt (n+i) os
-	Sep -> fmt1 n os
+        Str s -> s++fmt n os
+        Nl -> "\n"++fmt0 n os
+        Indent i -> fmt (n+i) os
+        Sep -> fmt1 n os
 
     -- fmt1: in the middle of a line, a space is to be inserted before next item
     fmt1 _ [] = []
     fmt1 n (o:os) =
       case o of
         Str s -> ' ':s++fmt n os
-	Nl -> "\n"++fmt0 n os
-	Indent i -> fmt1 (n+i) os
-	Sep -> fmt1 n os
+        Nl -> "\n"++fmt0 n os
+        Indent i -> fmt1 (n+i) os
+        Sep -> fmt1 n os

@@ -18,7 +18,7 @@ import RegExp
 --
 program = many (lexeme ! whitespace)
 
-lexeme  = varid      & o Varid  
+lexeme  = varid      & o Varid
         ! conid      & o Conid
         ! varsym     & o Varsym
         ! consym     & o Consym
@@ -70,7 +70,7 @@ reservedid =
         "let", "module", "newtype", "of", "then", "type", "where", "_"]
 
 {-
-specialid = as"as" ! as"qualified" ! as"hiding" 
+specialid = as"as" ! as"qualified" ! as"hiding"
           ! as"forall" -- rank 2 polymorphism extension
           ! as"primitive" -- Hugs foreign function interface
 -}
@@ -104,7 +104,7 @@ hexadecimal = some (a hexit)
 
 integer = decimal
         ! aa "0" & aa "Oo" & octal
-	! aa "0" & aa "Xx" & hexadecimal
+        ! aa "0" & aa "Xx" & hexadecimal
 
 float = decimal & aa "." & decimal & opt (aa "eE" & opt (aa "-+") & decimal)
 char = aa "'" & (a (graphic \\ acs "'\\") ! a space ! escape{-<\&>-}) & aa "'"
