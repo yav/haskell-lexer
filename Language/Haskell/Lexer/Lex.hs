@@ -1,7 +1,10 @@
-
 -- Automatically generated code for a DFA follows:
 --Equal states: [[[2,3],[8,9],[5,31],[10,11],[36,37],[39,40]]]
-{-# OPTIONS_GHC -O #-}
+{-# LANGUAGE CPP #-}
+{-# OPTIONS_GHC -O -fno-warn-unused-matches -fno-warn-name-shadowing #-}
+#if __GLASGOW_HASKELL__ > 710
+{-# OPTIONS_GHC -fno-warn-unused-top-binds #-}
+#endif
 module Language.Haskell.Lexer.Lex (haskellLex) where
 import Data.Char
 import Language.Haskell.Lexer.Utils
@@ -5363,5 +5366,3 @@ state213 err as is = nestedComment as is state214
 
 state214 :: LexerState
 state214 err as is = output NestedComment as (start1 is)
-
-
