@@ -1,4 +1,3 @@
-{-# OPTIONS_GHC -cpp #-}
 {-|
 This module collects the definitions from the Lexical Syntax in appendix B.3
 of the (revised) Haskell 98 report that define sets of characters.
@@ -34,35 +33,21 @@ space     = acs " \xa0"
 tab       = acs "\t"
 uniWhite  = [UniWhite]
 cany      = graphic++space++tab
-graphic   = small++large++symbol++digit++special++acs ":\"'"++latin1Print
+graphic   = small++large++symbol++digit++special++acs ":\"'"
 small     = ascSmall++uniSmall++acs "_"
 ascSmall  = acs ['a'..'z']
-uniSmall  = [UniSmall] ++acs latin1Lower -- because of isSymbol workaround
+uniSmall  = [UniSmall]
 large     = ascLarge++uniLarge
 ascLarge  = acs ['A'..'Z']
-uniLarge  = [UniLarge] ++acs latin1Upper -- because of isSymbol workaround
+uniLarge  = [UniLarge]
 symbol    = ascSymbol++uniSymbol
 ascSymbol = acs "!#$%&*+./<=>?@\\^|-~"
-uniSymbol = [UniSymbol]++acs latin1Symbol -- !! GHC missing isSymbol workaround
+uniSymbol = [UniSymbol]
 digit     = ascDigit++uniDigit
 ascDigit  = acs ['0'..'9']
 uniDigit  = [UniDigit]
 octit     = acs ['0'..'7']
 hexit     = digit ++ acs ['A'..'F'] ++ acs ['a'..'f']
-
--- Some of these are actually UniSmall, UniLarge, UniSymbol, but since GHC's
--- isUpper etc doesn't recognize them, we include them here, as a partial
--- workaround.
-latin1Print = acs ['\160'..'\255']
-#if __GLASGOW_HASKELL__>=606
-latin1Upper = ""
-latin1Lower = ""
-latin1Symbol = ""
-#else
-latin1Upper = "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖØÙÚÛÜİŞ"
-latin1Lower = "ßàáâãäåæçèéêëìíîïğñòóôõöøùúûüışÿ"
-latin1Symbol = "¡¢£¤¥¦§¨©¬­®¯°±´¶·¸¿×÷"
-#endif
 
 ----
 

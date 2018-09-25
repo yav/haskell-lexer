@@ -1,4 +1,3 @@
-
 -- Automatically generated code for a DFA follows:
 --Equal states: [[[2,3],[8,9],[5,31],[10,11],[36,37],[39,40]]]
 {-# OPTIONS_GHC -O #-}
@@ -119,107 +118,12 @@ cclass c =
     '{' -> 74
     '|' -> 75
     '~' -> 75
-    '\161' -> 76
-    '\162' -> 76
-    '\163' -> 76
-    '\164' -> 76
-    '\165' -> 76
-    '\166' -> 76
-    '\167' -> 76
-    '\168' -> 76
-    '\169' -> 76
-    '\170' -> 76
-    '\171' -> 76
-    '\172' -> 76
-    '\173' -> 76
-    '\174' -> 76
-    '\175' -> 76
-    '\176' -> 76
-    '\177' -> 76
-    '\178' -> 76
-    '\179' -> 76
-    '\180' -> 76
-    '\181' -> 76
-    '\182' -> 76
-    '\183' -> 76
-    '\184' -> 76
-    '\185' -> 76
-    '\186' -> 76
-    '\187' -> 76
-    '\188' -> 76
-    '\189' -> 76
-    '\190' -> 76
-    '\191' -> 76
-    '\192' -> 76
-    '\193' -> 76
-    '\194' -> 76
-    '\195' -> 76
-    '\196' -> 76
-    '\197' -> 76
-    '\198' -> 76
-    '\199' -> 76
-    '\200' -> 76
-    '\201' -> 76
-    '\202' -> 76
-    '\203' -> 76
-    '\204' -> 76
-    '\205' -> 76
-    '\206' -> 76
-    '\207' -> 76
-    '\208' -> 76
-    '\209' -> 76
-    '\210' -> 76
-    '\211' -> 76
-    '\212' -> 76
-    '\213' -> 76
-    '\214' -> 76
-    '\215' -> 76
-    '\216' -> 76
-    '\217' -> 76
-    '\218' -> 76
-    '\219' -> 76
-    '\220' -> 76
-    '\221' -> 76
-    '\222' -> 76
-    '\223' -> 76
-    '\224' -> 76
-    '\225' -> 76
-    '\226' -> 76
-    '\227' -> 76
-    '\228' -> 76
-    '\229' -> 76
-    '\230' -> 76
-    '\231' -> 76
-    '\232' -> 76
-    '\233' -> 76
-    '\234' -> 76
-    '\235' -> 76
-    '\236' -> 76
-    '\237' -> 76
-    '\238' -> 76
-    '\239' -> 76
-    '\240' -> 76
-    '\241' -> 76
-    '\242' -> 76
-    '\243' -> 76
-    '\244' -> 76
-    '\245' -> 76
-    '\246' -> 76
-    '\247' -> 76
-    '\248' -> 76
-    '\249' -> 76
-    '\250' -> 76
-    '\251' -> 76
-    '\252' -> 76
-    '\253' -> 76
-    '\254' -> 76
-    '\255' -> 76
     c | isAscii c -> 0
       | isSpace c -> 3
       | (\x -> isSymbol x || isPunctuation x) c -> 7
       | isDigit c -> 18
       | isLower c -> 60
-      | isUpper c -> 77
+      | isUpper c -> 76
       | otherwise -> 0
 
 start1 :: Lexer
@@ -258,10 +162,9 @@ state1 err as iis@(i:is) =
     16 -> state87 err (i:as) is
     17 -> state87 err (i:as) is
     18 -> state87 err (i:as) is
-    0 -> err as iis
-    76 -> err as iis
     11 -> state73 err (i:as) is
     47 -> state73 err (i:as) is
+    0 -> err as iis
     8 -> state5 err (i:as) is
     10 -> state41 err (i:as) is
     13 -> state74 err (i:as) is
@@ -1557,7 +1460,6 @@ state97 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     14 -> state98 err (i:as) is
     _ -> state97 err (i:as) is
   where err _ _ = output Conid as (start1 iis)
@@ -1584,7 +1486,6 @@ state98 err as iis@(i:is) =
     18 -> err as iis
     47 -> err as iis
     74 -> err as iis
-    76 -> err as iis
     51 -> state111 err (i:as) is
     52 -> state111 err (i:as) is
     56 -> state111 err (i:as) is
@@ -1862,7 +1763,6 @@ state109 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     14 -> state98 err (i:as) is
     _ -> state109 err (i:as) is
   where err _ _ = output Qconid as (start1 iis)
@@ -1897,7 +1797,6 @@ state110 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     _ -> state111 err (i:as) is
 
 state111 :: LexerState
@@ -1929,7 +1828,6 @@ state111 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
 
@@ -1962,7 +1860,6 @@ state112 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     51 -> state113 err (i:as) is
     61 -> state115 err (i:as) is
     _ -> state111 err (i:as) is
@@ -1997,7 +1894,6 @@ state113 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     67 -> state114 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2031,7 +1927,6 @@ state114 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     55 -> state110 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2065,7 +1960,6 @@ state115 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     51 -> state116 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2099,7 +1993,6 @@ state116 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     67 -> state117 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2133,7 +2026,6 @@ state117 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     67 -> state110 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2167,7 +2059,6 @@ state118 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     64 -> state110 err (i:as) is
     51 -> state119 err (i:as) is
     55 -> state121 err (i:as) is
@@ -2203,7 +2094,6 @@ state119 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     68 -> state120 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2237,7 +2127,6 @@ state120 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     51 -> state110 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2271,7 +2160,6 @@ state121 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     56 -> state122 err (i:as) is
     66 -> state126 err (i:as) is
     _ -> state111 err (i:as) is
@@ -2306,7 +2194,6 @@ state122 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     51 -> state123 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2340,7 +2227,6 @@ state123 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     69 -> state124 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2374,7 +2260,6 @@ state124 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     61 -> state125 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2408,7 +2293,6 @@ state125 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     68 -> state110 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2442,7 +2326,6 @@ state126 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     59 -> state127 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2476,7 +2359,6 @@ state127 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     70 -> state128 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2510,7 +2392,6 @@ state128 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     59 -> state129 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2544,7 +2425,6 @@ state129 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     63 -> state130 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2578,7 +2458,6 @@ state130 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     57 -> state110 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2612,7 +2491,6 @@ state131 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     61 -> state113 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2646,7 +2524,6 @@ state132 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     56 -> state110 err (i:as) is
     62 -> state133 err (i:as) is
     63 -> state136 err (i:as) is
@@ -2682,7 +2559,6 @@ state133 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     65 -> state134 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2716,7 +2592,6 @@ state134 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     64 -> state135 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2750,7 +2625,6 @@ state135 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     66 -> state125 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2785,7 +2659,6 @@ state136 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     56 -> state137 err (i:as) is
     67 -> state140 err (i:as) is
     _ -> state111 err (i:as) is
@@ -2819,7 +2692,6 @@ state137 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     59 -> state138 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2853,7 +2725,6 @@ state138 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     72 -> state139 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2888,7 +2759,6 @@ state139 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     61 -> state110 err (i:as) is
     66 -> state110 err (i:as) is
     _ -> state111 err (i:as) is
@@ -2922,7 +2792,6 @@ state140 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     68 -> state141 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2956,7 +2825,6 @@ state141 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     51 -> state142 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -2990,7 +2858,6 @@ state142 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     63 -> state143 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3024,7 +2891,6 @@ state143 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     53 -> state114 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3058,7 +2924,6 @@ state144 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     55 -> state125 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3092,7 +2957,6 @@ state145 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     64 -> state146 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3126,7 +2990,6 @@ state146 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     54 -> state147 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3160,7 +3023,6 @@ state147 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     69 -> state148 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3194,7 +3056,6 @@ state148 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     61 -> state114 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3228,7 +3089,6 @@ state149 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     55 -> state150 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3262,7 +3122,6 @@ state150 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     71 -> state151 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3296,7 +3155,6 @@ state151 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     68 -> state152 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3330,7 +3188,6 @@ state152 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     73 -> state153 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3364,7 +3221,6 @@ state153 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     65 -> state114 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3398,7 +3254,6 @@ state154 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     56 -> state110 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3432,7 +3287,6 @@ state155 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     73 -> state153 err (i:as) is
     58 -> state156 err (i:as) is
     _ -> state111 err (i:as) is
@@ -3467,7 +3321,6 @@ state156 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     55 -> state157 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3501,7 +3354,6 @@ state157 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     63 -> state110 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3535,7 +3387,6 @@ state158 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     58 -> state159 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3569,7 +3420,6 @@ state159 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     55 -> state160 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3603,7 +3453,6 @@ state160 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     66 -> state114 err (i:as) is
     _ -> state111 err (i:as) is
   where err _ _ = output Qvarid as (start1 iis)
@@ -3637,7 +3486,6 @@ state161 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     _ -> state162 err (i:as) is
   where err _ _ = output Reservedid as (start1 iis)
 
@@ -3670,7 +3518,6 @@ state162 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
 
@@ -3703,7 +3550,6 @@ state163 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     51 -> state164 err (i:as) is
     61 -> state166 err (i:as) is
     _ -> state162 err (i:as) is
@@ -3738,7 +3584,6 @@ state164 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     67 -> state165 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -3772,7 +3617,6 @@ state165 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     55 -> state161 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -3806,7 +3650,6 @@ state166 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     51 -> state167 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -3840,7 +3683,6 @@ state167 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     67 -> state168 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -3874,7 +3716,6 @@ state168 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     67 -> state161 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -3908,7 +3749,6 @@ state169 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     64 -> state161 err (i:as) is
     51 -> state170 err (i:as) is
     55 -> state172 err (i:as) is
@@ -3944,7 +3784,6 @@ state170 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     68 -> state171 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -3978,7 +3817,6 @@ state171 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     51 -> state161 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4012,7 +3850,6 @@ state172 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     56 -> state173 err (i:as) is
     66 -> state177 err (i:as) is
     _ -> state162 err (i:as) is
@@ -4047,7 +3884,6 @@ state173 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     51 -> state174 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4081,7 +3917,6 @@ state174 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     69 -> state175 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4115,7 +3950,6 @@ state175 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     61 -> state176 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4149,7 +3983,6 @@ state176 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     68 -> state161 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4183,7 +4016,6 @@ state177 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     59 -> state178 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4217,7 +4049,6 @@ state178 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     70 -> state179 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4251,7 +4082,6 @@ state179 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     59 -> state180 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4285,7 +4115,6 @@ state180 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     63 -> state181 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4319,7 +4148,6 @@ state181 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     57 -> state161 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4353,7 +4181,6 @@ state182 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     61 -> state164 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4387,7 +4214,6 @@ state183 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     56 -> state161 err (i:as) is
     62 -> state184 err (i:as) is
     63 -> state187 err (i:as) is
@@ -4423,7 +4249,6 @@ state184 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     65 -> state185 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4457,7 +4282,6 @@ state185 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     64 -> state186 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4491,7 +4315,6 @@ state186 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     66 -> state176 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4525,7 +4348,6 @@ state187 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     56 -> state188 err (i:as) is
     67 -> state191 err (i:as) is
     _ -> state162 err (i:as) is
@@ -4560,7 +4382,6 @@ state188 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     59 -> state189 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4594,7 +4415,6 @@ state189 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     72 -> state190 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4628,7 +4448,6 @@ state190 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     61 -> state161 err (i:as) is
     66 -> state161 err (i:as) is
     _ -> state162 err (i:as) is
@@ -4663,7 +4482,6 @@ state191 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     68 -> state192 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4697,7 +4515,6 @@ state192 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     51 -> state193 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4731,7 +4548,6 @@ state193 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     63 -> state194 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4765,7 +4581,6 @@ state194 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     53 -> state165 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4799,7 +4614,6 @@ state195 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     55 -> state176 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4833,7 +4647,6 @@ state196 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     64 -> state197 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4867,7 +4680,6 @@ state197 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     54 -> state198 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4901,7 +4713,6 @@ state198 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     69 -> state199 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4935,7 +4746,6 @@ state199 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     61 -> state165 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -4969,7 +4779,6 @@ state200 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     55 -> state201 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -5003,7 +4812,6 @@ state201 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     71 -> state202 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -5037,7 +4845,6 @@ state202 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     68 -> state203 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -5071,7 +4878,6 @@ state203 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     73 -> state204 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -5105,7 +4911,6 @@ state204 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     65 -> state165 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -5139,7 +4944,6 @@ state205 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     56 -> state161 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -5173,7 +4977,6 @@ state206 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     73 -> state204 err (i:as) is
     58 -> state207 err (i:as) is
     _ -> state162 err (i:as) is
@@ -5208,7 +5011,6 @@ state207 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     55 -> state208 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -5242,7 +5044,6 @@ state208 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     63 -> state161 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -5276,7 +5077,6 @@ state209 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     58 -> state210 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -5310,7 +5110,6 @@ state210 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     55 -> state211 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
@@ -5344,7 +5143,6 @@ state211 err as iis@(i:is) =
     49 -> err as iis
     74 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     66 -> state165 err (i:as) is
     _ -> state162 err (i:as) is
   where err _ _ = output Varid as (start1 iis)
