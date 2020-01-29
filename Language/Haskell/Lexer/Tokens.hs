@@ -14,6 +14,11 @@ data Token
   | CharLit     -- ^ Character literal
   | StringLit   -- ^ String literal
 
+
+  | QQQStart    -- ^ Start qualified quote: @[|A.name|@
+  | QQStart     -- ^ Start unqualified quote: @[|name|@
+  | QQBody      -- ^ The body of a quote: @text|]@
+
   | Qvarid      -- ^ Qualified variable
   | Qconid      -- ^ Qualified constructor
   | Qvarsym     -- ^ Qualified variable operator

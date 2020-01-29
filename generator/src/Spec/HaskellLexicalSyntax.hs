@@ -32,11 +32,18 @@ lexeme  = varid      & o Varid
         ! qconid     & o Qconid
         ! qvarsym    & o Qvarsym
         ! qconsym    & o Qconsym
+        ! qquote
+
+qquote  = ( (qqStart varid  & o QQStart)
+          ! (qqStart qvarid & o QQQStart)
+          )
+        & (qqBody & o QQBody)
 
 literal = integer    & o IntLit
         ! float      & o FloatLit
         ! char       & o CharLit
         ! string     & o StringLit
+
 
 whitechar = newline ! a vertab ! a space ! a tab ! a uniWhite
 newline   = a creturn & a linefeed
@@ -50,6 +57,14 @@ dashes = as "--" & many (aa "-")
 opencom = as "{-"
 --closecom = as "-}"
 ncomment = opencom & o NestedCommentStart -- handled by calling an external function
+
+qqStart x = as "[|" & x & as "|"
+
+qqBody = many bodyChunk & some (as "|") & as "]"
+  where
+  bodyChunk  = many (notThis "|") ! bodyPipe
+  bodyPipe   = some (as "|") & notThis "|]"
+  notThis x  = (a cany ! whitechar) -! aa x
 
 -- This doesn't work, since regular expressions can't be recursive...
 --ncomment = opencom & lANYseq & many (ncomment & lANYseq) & closecom
