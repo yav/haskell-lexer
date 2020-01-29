@@ -1,0 +1,4 @@
+#!/bin/sh -eu
+
+cd generator
+cabal v2-run -v0 > ../Language/Haskell/Lexer/Lex.hs

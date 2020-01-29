@@ -19,6 +19,9 @@ data Token
   | Qvarsym     -- ^ Qualified variable operator
   | Qconsym     -- ^ Qualified constructor operator
 
+  | Quasiquote  -- ^ Quasi-quote
+  | Qquasiquote -- ^ Qualified quasi-quote
+
   | Special
   | Whitespace  -- ^ White space
 

@@ -33,6 +33,9 @@ lexeme  = varid      & o Varid
         ! qvarsym    & o Qvarsym
         ! qconsym    & o Qconsym
 
+        ! quasiquote  & o Quasiquote
+        ! qquasiquote & o Qquasiquote
+
 literal = integer    & o IntLit
         ! float      & o FloatLit
         ! char       & o CharLit
@@ -77,6 +80,9 @@ specialid = as"as" ! as"qualified" ! as"hiding"
 
 varsym = (a symbol & many (a symbol ! aa ":")) -! (reservedop ! dashes)
 consym = (aa ":" & many (a symbol ! aa ":")) -! reservedop
+
+quasiquote = aa "[" & varid & aa "|" & many (a cany ! whitechar) & aa "|]"
+qquasiquote = aa "[" & qvarid & aa "|" & many (a cany ! whitechar) & aa "|]"
 
 reservedop = ass ["..", ":","::", "=","\\","|","<-","->","@","~","=>"]
 
