@@ -32,12 +32,8 @@ lexeme  = varid      & o Varid
         ! qconid     & o Qconid
         ! qvarsym    & o Qvarsym
         ! qconsym    & o Qconsym
-        ! qquote
+        ! qquote     & o QQuote
 
-qquote  = ( (qqStart varid  & o QQStart)
-          ! (qqStart qvarid & o QQQStart)
-          )
-        & (qqBody & o QQBody)
 
 literal = integer    & o IntLit
         ! float      & o FloatLit
@@ -58,10 +54,10 @@ opencom = as "{-"
 --closecom = as "-}"
 ncomment = opencom & o NestedCommentStart -- handled by calling an external function
 
-qqStart x = as "[|" & x & as "|"
-
-qqBody = many bodyChunk & some (as "|") & as "]"
+qquote = start & body
   where
+  start      = as "[|" & (qvarid ! varid) & as "|"
+  body       = many bodyChunk & some (as "|") & as "]"
   bodyChunk  = many (notThis "|") ! bodyPipe
   bodyPipe   = some (as "|") & notThis "|]"
   notThis x  = (a cany ! whitechar) -! aa x

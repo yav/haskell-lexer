@@ -1,6 +1,6 @@
 
 -- Automatically generated code for a DFA follows:
---Equal states: [[[168,172]],[[2,3],[8,9],[168,169,170,173],[5,31],[10,11],[36,37],[39,40]]]
+--Equal states: [[[167,171]],[[2,3],[8,9],[167,168,169,172],[5,31],[10,11],[36,37],[39,40],[162,164]]]
 {-# OPTIONS_GHC -O #-}
 module Language.Haskell.Lexer.Lex (haskellLex) where
 import Data.Char
@@ -133,19 +133,19 @@ state1 :: LexerState
 state1 err as [] = gotEOF as
 state1 err as iis@(i:is) =
   case cclass i of
-    52 -> state277 err (i:as) is
-    53 -> state277 err (i:as) is
-    57 -> state277 err (i:as) is
-    58 -> state277 err (i:as) is
-    59 -> state277 err (i:as) is
-    61 -> state277 err (i:as) is
-    66 -> state277 err (i:as) is
-    67 -> state277 err (i:as) is
-    68 -> state277 err (i:as) is
-    70 -> state277 err (i:as) is
-    71 -> state277 err (i:as) is
-    73 -> state277 err (i:as) is
-    74 -> state277 err (i:as) is
+    52 -> state224 err (i:as) is
+    53 -> state224 err (i:as) is
+    57 -> state224 err (i:as) is
+    58 -> state224 err (i:as) is
+    59 -> state224 err (i:as) is
+    61 -> state224 err (i:as) is
+    66 -> state224 err (i:as) is
+    67 -> state224 err (i:as) is
+    68 -> state224 err (i:as) is
+    70 -> state224 err (i:as) is
+    71 -> state224 err (i:as) is
+    73 -> state224 err (i:as) is
+    74 -> state224 err (i:as) is
     1 -> state2 err (i:as) is
     2 -> state2 err (i:as) is
     3 -> state2 err (i:as) is
@@ -176,18 +176,18 @@ state1 err as iis@(i:is) =
     20 -> state95 err (i:as) is
     21 -> state96 err (i:as) is
     47 -> state161 err (i:as) is
-    51 -> state276 err (i:as) is
-    54 -> state278 err (i:as) is
-    55 -> state284 err (i:as) is
-    56 -> state297 err (i:as) is
-    60 -> state298 err (i:as) is
-    62 -> state310 err (i:as) is
-    63 -> state311 err (i:as) is
-    64 -> state315 err (i:as) is
-    65 -> state320 err (i:as) is
-    69 -> state321 err (i:as) is
-    72 -> state324 err (i:as) is
-    75 -> state327 err (i:as) is
+    51 -> state223 err (i:as) is
+    54 -> state225 err (i:as) is
+    55 -> state231 err (i:as) is
+    56 -> state244 err (i:as) is
+    60 -> state245 err (i:as) is
+    62 -> state257 err (i:as) is
+    63 -> state258 err (i:as) is
+    64 -> state262 err (i:as) is
+    65 -> state267 err (i:as) is
+    69 -> state268 err (i:as) is
+    72 -> state271 err (i:as) is
+    75 -> state274 err (i:as) is
     _ -> state97 err (i:as) is
 
 state2 :: LexerState
@@ -3629,30 +3629,30 @@ state162 err as iis@(i:is) =
     45 -> state163 err (i:as) is
     46 -> state163 err (i:as) is
     78 -> state163 err (i:as) is
-    52 -> state225 err (i:as) is
-    53 -> state225 err (i:as) is
-    57 -> state225 err (i:as) is
-    58 -> state225 err (i:as) is
-    59 -> state225 err (i:as) is
-    61 -> state225 err (i:as) is
-    66 -> state225 err (i:as) is
-    67 -> state225 err (i:as) is
-    68 -> state225 err (i:as) is
-    70 -> state225 err (i:as) is
-    71 -> state225 err (i:as) is
-    73 -> state225 err (i:as) is
-    74 -> state225 err (i:as) is
-    51 -> state224 err (i:as) is
-    54 -> state227 err (i:as) is
-    55 -> state233 err (i:as) is
-    56 -> state246 err (i:as) is
-    60 -> state247 err (i:as) is
-    62 -> state259 err (i:as) is
-    63 -> state260 err (i:as) is
-    64 -> state264 err (i:as) is
-    65 -> state269 err (i:as) is
-    69 -> state270 err (i:as) is
-    72 -> state273 err (i:as) is
+    52 -> state166 err (i:as) is
+    53 -> state166 err (i:as) is
+    57 -> state166 err (i:as) is
+    58 -> state166 err (i:as) is
+    59 -> state166 err (i:as) is
+    61 -> state166 err (i:as) is
+    66 -> state166 err (i:as) is
+    67 -> state166 err (i:as) is
+    68 -> state166 err (i:as) is
+    70 -> state166 err (i:as) is
+    71 -> state166 err (i:as) is
+    73 -> state166 err (i:as) is
+    74 -> state166 err (i:as) is
+    51 -> state165 err (i:as) is
+    54 -> state174 err (i:as) is
+    55 -> state180 err (i:as) is
+    56 -> state193 err (i:as) is
+    60 -> state194 err (i:as) is
+    62 -> state206 err (i:as) is
+    63 -> state207 err (i:as) is
+    64 -> state211 err (i:as) is
+    65 -> state216 err (i:as) is
+    69 -> state217 err (i:as) is
+    72 -> state220 err (i:as) is
     _ -> err as iis
 
 start163 :: Lexer
@@ -3686,64 +3686,8 @@ state163 err as iis@(i:is) =
     75 -> err as iis
     76 -> err as iis
     77 -> err as iis
-    14 -> state164 err (i:as) is
+    14 -> state162 err (i:as) is
     _ -> state163 err (i:as) is
-
-start164 :: Lexer
-start164 is = state164 (\ as is -> gotError as is) "" is
-state164 :: LexerState
-state164 err as [] = err as []
-state164 err as iis@(i:is) =
-  case cclass i of
-    24 -> state163 err (i:as) is
-    25 -> state163 err (i:as) is
-    26 -> state163 err (i:as) is
-    27 -> state163 err (i:as) is
-    28 -> state163 err (i:as) is
-    29 -> state163 err (i:as) is
-    30 -> state163 err (i:as) is
-    31 -> state163 err (i:as) is
-    32 -> state163 err (i:as) is
-    33 -> state163 err (i:as) is
-    34 -> state163 err (i:as) is
-    35 -> state163 err (i:as) is
-    36 -> state163 err (i:as) is
-    37 -> state163 err (i:as) is
-    38 -> state163 err (i:as) is
-    39 -> state163 err (i:as) is
-    40 -> state163 err (i:as) is
-    41 -> state163 err (i:as) is
-    42 -> state163 err (i:as) is
-    43 -> state163 err (i:as) is
-    44 -> state163 err (i:as) is
-    45 -> state163 err (i:as) is
-    46 -> state163 err (i:as) is
-    78 -> state163 err (i:as) is
-    52 -> state166 err (i:as) is
-    53 -> state166 err (i:as) is
-    57 -> state166 err (i:as) is
-    58 -> state166 err (i:as) is
-    59 -> state166 err (i:as) is
-    61 -> state166 err (i:as) is
-    66 -> state166 err (i:as) is
-    67 -> state166 err (i:as) is
-    68 -> state166 err (i:as) is
-    70 -> state166 err (i:as) is
-    71 -> state166 err (i:as) is
-    73 -> state166 err (i:as) is
-    74 -> state166 err (i:as) is
-    51 -> state165 err (i:as) is
-    54 -> state175 err (i:as) is
-    55 -> state181 err (i:as) is
-    56 -> state194 err (i:as) is
-    60 -> state195 err (i:as) is
-    62 -> state207 err (i:as) is
-    63 -> state208 err (i:as) is
-    64 -> state212 err (i:as) is
-    65 -> state217 err (i:as) is
-    69 -> state218 err (i:as) is
-    72 -> state221 err (i:as) is
-    _ -> err as iis
 
 start165 :: Lexer
 start165 is = state165 (\ as is -> gotError as is) "" is
@@ -3813,32 +3757,65 @@ state166 err as iis@(i:is) =
     76 -> state167 err (i:as) is
     _ -> state166 err (i:as) is
 
+start167 :: Lexer
+start167 is = state167 (\ as is -> gotError as is) "" is
 state167 :: LexerState
-state167 err as is = output QQQStart as (start168 is)
-
-start168 :: Lexer
-start168 is = state168 (\ as is -> gotError as is) "" is
-state168 :: LexerState
-state168 err as [] = err as []
-state168 err as iis@(i:is) =
+state167 err as [] = err as []
+state167 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
-    76 -> state171 err (i:as) is
-    _ -> state168 err (i:as) is
+    76 -> state170 err (i:as) is
+    _ -> state167 err (i:as) is
 
-start171 :: Lexer
-start171 is = state171 (\ as is -> gotError as is) "" is
-state171 :: LexerState
-state171 err as [] = err as []
-state171 err as iis@(i:is) =
+start170 :: Lexer
+start170 is = state170 (\ as is -> gotError as is) "" is
+state170 :: LexerState
+state170 err as [] = err as []
+state170 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
-    76 -> state171 err (i:as) is
-    49 -> state174 err (i:as) is
-    _ -> state168 err (i:as) is
+    76 -> state170 err (i:as) is
+    49 -> state173 err (i:as) is
+    _ -> state167 err (i:as) is
 
+state173 :: LexerState
+state173 err as is = output QQuote as (start1 is)
+
+start174 :: Lexer
+start174 is = state174 (\ as is -> gotError as is) "" is
 state174 :: LexerState
-state174 err as is = output QQBody as (start1 is)
+state174 err as [] = err as []
+state174 err as iis@(i:is) =
+  case cclass i of
+    0 -> err as iis
+    1 -> err as iis
+    2 -> err as iis
+    3 -> err as iis
+    4 -> err as iis
+    5 -> err as iis
+    6 -> err as iis
+    7 -> err as iis
+    8 -> err as iis
+    9 -> err as iis
+    11 -> err as iis
+    12 -> err as iis
+    13 -> err as iis
+    14 -> err as iis
+    19 -> err as iis
+    20 -> err as iis
+    21 -> err as iis
+    22 -> err as iis
+    23 -> err as iis
+    47 -> err as iis
+    48 -> err as iis
+    49 -> err as iis
+    50 -> err as iis
+    75 -> err as iis
+    77 -> err as iis
+    76 -> state167 err (i:as) is
+    52 -> state175 err (i:as) is
+    62 -> state177 err (i:as) is
+    _ -> state166 err (i:as) is
 
 start175 :: Lexer
 start175 is = state175 (\ as is -> gotError as is) "" is
@@ -3872,8 +3849,7 @@ state175 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    52 -> state176 err (i:as) is
-    62 -> state178 err (i:as) is
+    68 -> state176 err (i:as) is
     _ -> state166 err (i:as) is
 
 start176 :: Lexer
@@ -3907,8 +3883,8 @@ state176 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
+    56 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
-    68 -> state177 err (i:as) is
     _ -> state166 err (i:as) is
 
 start177 :: Lexer
@@ -3942,8 +3918,8 @@ state177 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
-    56 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
+    52 -> state178 err (i:as) is
     _ -> state166 err (i:as) is
 
 start178 :: Lexer
@@ -3978,7 +3954,7 @@ state178 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    52 -> state179 err (i:as) is
+    68 -> state179 err (i:as) is
     _ -> state166 err (i:as) is
 
 start179 :: Lexer
@@ -4012,8 +3988,8 @@ state179 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
+    68 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
-    68 -> state180 err (i:as) is
     _ -> state166 err (i:as) is
 
 start180 :: Lexer
@@ -4047,8 +4023,10 @@ state180 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
-    68 -> state165 err (i:as) is
+    65 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
+    52 -> state181 err (i:as) is
+    56 -> state183 err (i:as) is
     _ -> state166 err (i:as) is
 
 start181 :: Lexer
@@ -4082,10 +4060,8 @@ state181 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
-    65 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
-    52 -> state182 err (i:as) is
-    56 -> state184 err (i:as) is
+    69 -> state182 err (i:as) is
     _ -> state166 err (i:as) is
 
 start182 :: Lexer
@@ -4119,8 +4095,8 @@ state182 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
+    52 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
-    69 -> state183 err (i:as) is
     _ -> state166 err (i:as) is
 
 start183 :: Lexer
@@ -4154,8 +4130,9 @@ state183 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
-    52 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
+    57 -> state184 err (i:as) is
+    67 -> state188 err (i:as) is
     _ -> state166 err (i:as) is
 
 start184 :: Lexer
@@ -4190,8 +4167,7 @@ state184 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    57 -> state185 err (i:as) is
-    67 -> state189 err (i:as) is
+    52 -> state185 err (i:as) is
     _ -> state166 err (i:as) is
 
 start185 :: Lexer
@@ -4226,7 +4202,7 @@ state185 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    52 -> state186 err (i:as) is
+    70 -> state186 err (i:as) is
     _ -> state166 err (i:as) is
 
 start186 :: Lexer
@@ -4261,7 +4237,7 @@ state186 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    70 -> state187 err (i:as) is
+    62 -> state187 err (i:as) is
     _ -> state166 err (i:as) is
 
 start187 :: Lexer
@@ -4295,8 +4271,8 @@ state187 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
+    69 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
-    62 -> state188 err (i:as) is
     _ -> state166 err (i:as) is
 
 start188 :: Lexer
@@ -4330,8 +4306,8 @@ state188 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
-    69 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
+    60 -> state189 err (i:as) is
     _ -> state166 err (i:as) is
 
 start189 :: Lexer
@@ -4366,7 +4342,7 @@ state189 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    60 -> state190 err (i:as) is
+    71 -> state190 err (i:as) is
     _ -> state166 err (i:as) is
 
 start190 :: Lexer
@@ -4401,7 +4377,7 @@ state190 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    71 -> state191 err (i:as) is
+    60 -> state191 err (i:as) is
     _ -> state166 err (i:as) is
 
 start191 :: Lexer
@@ -4436,7 +4412,7 @@ state191 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    60 -> state192 err (i:as) is
+    64 -> state192 err (i:as) is
     _ -> state166 err (i:as) is
 
 start192 :: Lexer
@@ -4470,8 +4446,8 @@ state192 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
+    58 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
-    64 -> state193 err (i:as) is
     _ -> state166 err (i:as) is
 
 start193 :: Lexer
@@ -4505,8 +4481,8 @@ state193 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
-    58 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
+    62 -> state175 err (i:as) is
     _ -> state166 err (i:as) is
 
 start194 :: Lexer
@@ -4540,8 +4516,10 @@ state194 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
+    57 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
-    62 -> state176 err (i:as) is
+    63 -> state195 err (i:as) is
+    64 -> state198 err (i:as) is
     _ -> state166 err (i:as) is
 
 start195 :: Lexer
@@ -4575,10 +4553,8 @@ state195 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
-    57 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
-    63 -> state196 err (i:as) is
-    64 -> state199 err (i:as) is
+    66 -> state196 err (i:as) is
     _ -> state166 err (i:as) is
 
 start196 :: Lexer
@@ -4613,7 +4589,7 @@ state196 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    66 -> state197 err (i:as) is
+    65 -> state197 err (i:as) is
     _ -> state166 err (i:as) is
 
 start197 :: Lexer
@@ -4648,7 +4624,7 @@ state197 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    65 -> state198 err (i:as) is
+    67 -> state187 err (i:as) is
     _ -> state166 err (i:as) is
 
 start198 :: Lexer
@@ -4681,9 +4657,10 @@ state198 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state167 err (i:as) is
-    67 -> state188 err (i:as) is
+    57 -> state199 err (i:as) is
+    68 -> state202 err (i:as) is
     _ -> state166 err (i:as) is
 
 start199 :: Lexer
@@ -4716,10 +4693,9 @@ state199 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     77 -> err as iis
-    57 -> state200 err (i:as) is
-    68 -> state203 err (i:as) is
+    76 -> state167 err (i:as) is
+    60 -> state200 err (i:as) is
     _ -> state166 err (i:as) is
 
 start200 :: Lexer
@@ -4754,7 +4730,7 @@ state200 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    60 -> state201 err (i:as) is
+    73 -> state201 err (i:as) is
     _ -> state166 err (i:as) is
 
 start201 :: Lexer
@@ -4787,9 +4763,10 @@ state201 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state167 err (i:as) is
-    73 -> state202 err (i:as) is
+    62 -> state165 err (i:as) is
+    67 -> state165 err (i:as) is
     _ -> state166 err (i:as) is
 
 start202 :: Lexer
@@ -4822,10 +4799,9 @@ state202 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
-    76 -> err as iis
     77 -> err as iis
-    62 -> state165 err (i:as) is
-    67 -> state165 err (i:as) is
+    76 -> state167 err (i:as) is
+    69 -> state203 err (i:as) is
     _ -> state166 err (i:as) is
 
 start203 :: Lexer
@@ -4860,7 +4836,7 @@ state203 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    69 -> state204 err (i:as) is
+    52 -> state204 err (i:as) is
     _ -> state166 err (i:as) is
 
 start204 :: Lexer
@@ -4895,7 +4871,7 @@ state204 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    52 -> state205 err (i:as) is
+    64 -> state205 err (i:as) is
     _ -> state166 err (i:as) is
 
 start205 :: Lexer
@@ -4930,7 +4906,7 @@ state205 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    64 -> state206 err (i:as) is
+    54 -> state176 err (i:as) is
     _ -> state166 err (i:as) is
 
 start206 :: Lexer
@@ -4965,7 +4941,7 @@ state206 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    54 -> state177 err (i:as) is
+    56 -> state187 err (i:as) is
     _ -> state166 err (i:as) is
 
 start207 :: Lexer
@@ -5000,7 +4976,7 @@ state207 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    56 -> state188 err (i:as) is
+    65 -> state208 err (i:as) is
     _ -> state166 err (i:as) is
 
 start208 :: Lexer
@@ -5035,7 +5011,7 @@ state208 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    65 -> state209 err (i:as) is
+    55 -> state209 err (i:as) is
     _ -> state166 err (i:as) is
 
 start209 :: Lexer
@@ -5070,7 +5046,7 @@ state209 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    55 -> state210 err (i:as) is
+    70 -> state210 err (i:as) is
     _ -> state166 err (i:as) is
 
 start210 :: Lexer
@@ -5105,7 +5081,7 @@ state210 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    70 -> state211 err (i:as) is
+    62 -> state176 err (i:as) is
     _ -> state166 err (i:as) is
 
 start211 :: Lexer
@@ -5140,7 +5116,7 @@ state211 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    62 -> state177 err (i:as) is
+    56 -> state212 err (i:as) is
     _ -> state166 err (i:as) is
 
 start212 :: Lexer
@@ -5175,7 +5151,7 @@ state212 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    56 -> state213 err (i:as) is
+    72 -> state213 err (i:as) is
     _ -> state166 err (i:as) is
 
 start213 :: Lexer
@@ -5210,7 +5186,7 @@ state213 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    72 -> state214 err (i:as) is
+    69 -> state214 err (i:as) is
     _ -> state166 err (i:as) is
 
 start214 :: Lexer
@@ -5245,7 +5221,7 @@ state214 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    69 -> state215 err (i:as) is
+    74 -> state215 err (i:as) is
     _ -> state166 err (i:as) is
 
 start215 :: Lexer
@@ -5280,7 +5256,7 @@ state215 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    74 -> state216 err (i:as) is
+    66 -> state176 err (i:as) is
     _ -> state166 err (i:as) is
 
 start216 :: Lexer
@@ -5314,8 +5290,8 @@ state216 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
+    57 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
-    66 -> state177 err (i:as) is
     _ -> state166 err (i:as) is
 
 start217 :: Lexer
@@ -5349,8 +5325,9 @@ state217 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
-    57 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
+    74 -> state215 err (i:as) is
+    59 -> state218 err (i:as) is
     _ -> state166 err (i:as) is
 
 start218 :: Lexer
@@ -5385,8 +5362,7 @@ state218 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    74 -> state216 err (i:as) is
-    59 -> state219 err (i:as) is
+    56 -> state219 err (i:as) is
     _ -> state166 err (i:as) is
 
 start219 :: Lexer
@@ -5420,8 +5396,8 @@ state219 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
+    64 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
-    56 -> state220 err (i:as) is
     _ -> state166 err (i:as) is
 
 start220 :: Lexer
@@ -5455,8 +5431,8 @@ state220 err as iis@(i:is) =
     50 -> err as iis
     75 -> err as iis
     77 -> err as iis
-    64 -> state165 err (i:as) is
     76 -> state167 err (i:as) is
+    59 -> state221 err (i:as) is
     _ -> state166 err (i:as) is
 
 start221 :: Lexer
@@ -5491,7 +5467,7 @@ state221 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    59 -> state222 err (i:as) is
+    56 -> state222 err (i:as) is
     _ -> state166 err (i:as) is
 
 start222 :: Lexer
@@ -5526,13 +5502,12 @@ state222 err as iis@(i:is) =
     75 -> err as iis
     77 -> err as iis
     76 -> state167 err (i:as) is
-    56 -> state223 err (i:as) is
+    67 -> state176 err (i:as) is
     _ -> state166 err (i:as) is
 
-start223 :: Lexer
-start223 is = state223 (\ as is -> gotError as is) "" is
 state223 :: LexerState
 state223 err as [] = err as []
+  where err _ _ = output Reservedid as (start1 [])
 state223 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -5559,15 +5534,14 @@ state223 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state167 err (i:as) is
-    67 -> state177 err (i:as) is
-    _ -> state166 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Reservedid as (start1 iis)
 
-start224 :: Lexer
-start224 is = state224 (\ as is -> gotError as is) "" is
 state224 :: LexerState
 state224 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state224 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -5596,12 +5570,12 @@ state224 err as iis@(i:is) =
     75 -> err as iis
     76 -> err as iis
     77 -> err as iis
-    _ -> state225 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start225 :: Lexer
-start225 is = state225 (\ as is -> gotError as is) "" is
 state225 :: LexerState
 state225 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state225 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -5628,17 +5602,51 @@ state225 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    _ -> state225 err (i:as) is
+    52 -> state226 err (i:as) is
+    62 -> state228 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
 state226 :: LexerState
-state226 err as is = output QQStart as (start168 is)
+state226 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
+state226 err as iis@(i:is) =
+  case cclass i of
+    0 -> err as iis
+    1 -> err as iis
+    2 -> err as iis
+    3 -> err as iis
+    4 -> err as iis
+    5 -> err as iis
+    6 -> err as iis
+    7 -> err as iis
+    8 -> err as iis
+    9 -> err as iis
+    11 -> err as iis
+    12 -> err as iis
+    13 -> err as iis
+    14 -> err as iis
+    19 -> err as iis
+    20 -> err as iis
+    21 -> err as iis
+    22 -> err as iis
+    23 -> err as iis
+    47 -> err as iis
+    48 -> err as iis
+    49 -> err as iis
+    50 -> err as iis
+    75 -> err as iis
+    76 -> err as iis
+    77 -> err as iis
+    68 -> state227 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start227 :: Lexer
-start227 is = state227 (\ as is -> gotError as is) "" is
 state227 :: LexerState
 state227 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state227 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -5665,16 +5673,15 @@ state227 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    52 -> state228 err (i:as) is
-    62 -> state230 err (i:as) is
-    _ -> state225 err (i:as) is
+    56 -> state223 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start228 :: Lexer
-start228 is = state228 (\ as is -> gotError as is) "" is
 state228 :: LexerState
 state228 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state228 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -5701,15 +5708,15 @@ state228 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    68 -> state229 err (i:as) is
-    _ -> state225 err (i:as) is
+    52 -> state229 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start229 :: Lexer
-start229 is = state229 (\ as is -> gotError as is) "" is
 state229 :: LexerState
 state229 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state229 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -5736,15 +5743,15 @@ state229 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    56 -> state224 err (i:as) is
-    76 -> state226 err (i:as) is
-    _ -> state225 err (i:as) is
+    68 -> state230 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start230 :: Lexer
-start230 is = state230 (\ as is -> gotError as is) "" is
 state230 :: LexerState
 state230 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state230 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -5771,15 +5778,15 @@ state230 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    52 -> state231 err (i:as) is
-    _ -> state225 err (i:as) is
+    68 -> state223 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start231 :: Lexer
-start231 is = state231 (\ as is -> gotError as is) "" is
 state231 :: LexerState
 state231 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state231 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -5806,15 +5813,17 @@ state231 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    68 -> state232 err (i:as) is
-    _ -> state225 err (i:as) is
+    65 -> state223 err (i:as) is
+    52 -> state232 err (i:as) is
+    56 -> state234 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start232 :: Lexer
-start232 is = state232 (\ as is -> gotError as is) "" is
 state232 :: LexerState
 state232 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state232 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -5841,15 +5850,15 @@ state232 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    68 -> state224 err (i:as) is
-    76 -> state226 err (i:as) is
-    _ -> state225 err (i:as) is
+    69 -> state233 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start233 :: Lexer
-start233 is = state233 (\ as is -> gotError as is) "" is
 state233 :: LexerState
 state233 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state233 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -5876,17 +5885,15 @@ state233 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    65 -> state224 err (i:as) is
-    76 -> state226 err (i:as) is
-    52 -> state234 err (i:as) is
-    56 -> state236 err (i:as) is
-    _ -> state225 err (i:as) is
+    52 -> state223 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start234 :: Lexer
-start234 is = state234 (\ as is -> gotError as is) "" is
 state234 :: LexerState
 state234 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state234 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -5913,15 +5920,16 @@ state234 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    69 -> state235 err (i:as) is
-    _ -> state225 err (i:as) is
+    57 -> state235 err (i:as) is
+    67 -> state239 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start235 :: Lexer
-start235 is = state235 (\ as is -> gotError as is) "" is
 state235 :: LexerState
 state235 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state235 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -5948,15 +5956,15 @@ state235 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    52 -> state224 err (i:as) is
-    76 -> state226 err (i:as) is
-    _ -> state225 err (i:as) is
+    52 -> state236 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start236 :: Lexer
-start236 is = state236 (\ as is -> gotError as is) "" is
 state236 :: LexerState
 state236 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state236 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -5983,16 +5991,15 @@ state236 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    57 -> state237 err (i:as) is
-    67 -> state241 err (i:as) is
-    _ -> state225 err (i:as) is
+    70 -> state237 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start237 :: Lexer
-start237 is = state237 (\ as is -> gotError as is) "" is
 state237 :: LexerState
 state237 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state237 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6019,15 +6026,15 @@ state237 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    52 -> state238 err (i:as) is
-    _ -> state225 err (i:as) is
+    62 -> state238 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start238 :: Lexer
-start238 is = state238 (\ as is -> gotError as is) "" is
 state238 :: LexerState
 state238 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state238 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6054,15 +6061,15 @@ state238 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    70 -> state239 err (i:as) is
-    _ -> state225 err (i:as) is
+    69 -> state223 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start239 :: Lexer
-start239 is = state239 (\ as is -> gotError as is) "" is
 state239 :: LexerState
 state239 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state239 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6089,15 +6096,15 @@ state239 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    62 -> state240 err (i:as) is
-    _ -> state225 err (i:as) is
+    60 -> state240 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start240 :: Lexer
-start240 is = state240 (\ as is -> gotError as is) "" is
 state240 :: LexerState
 state240 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state240 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6124,15 +6131,15 @@ state240 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    69 -> state224 err (i:as) is
-    76 -> state226 err (i:as) is
-    _ -> state225 err (i:as) is
+    71 -> state241 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start241 :: Lexer
-start241 is = state241 (\ as is -> gotError as is) "" is
 state241 :: LexerState
 state241 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state241 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6159,15 +6166,15 @@ state241 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
     60 -> state242 err (i:as) is
-    _ -> state225 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start242 :: Lexer
-start242 is = state242 (\ as is -> gotError as is) "" is
 state242 :: LexerState
 state242 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state242 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6194,15 +6201,15 @@ state242 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    71 -> state243 err (i:as) is
-    _ -> state225 err (i:as) is
+    64 -> state243 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start243 :: Lexer
-start243 is = state243 (\ as is -> gotError as is) "" is
 state243 :: LexerState
 state243 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state243 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6229,15 +6236,15 @@ state243 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    60 -> state244 err (i:as) is
-    _ -> state225 err (i:as) is
+    58 -> state223 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start244 :: Lexer
-start244 is = state244 (\ as is -> gotError as is) "" is
 state244 :: LexerState
 state244 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state244 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6264,15 +6271,15 @@ state244 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    64 -> state245 err (i:as) is
-    _ -> state225 err (i:as) is
+    62 -> state226 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start245 :: Lexer
-start245 is = state245 (\ as is -> gotError as is) "" is
 state245 :: LexerState
 state245 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state245 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6299,15 +6306,17 @@ state245 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    58 -> state224 err (i:as) is
-    76 -> state226 err (i:as) is
-    _ -> state225 err (i:as) is
+    57 -> state223 err (i:as) is
+    63 -> state246 err (i:as) is
+    64 -> state249 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start246 :: Lexer
-start246 is = state246 (\ as is -> gotError as is) "" is
 state246 :: LexerState
 state246 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state246 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6334,15 +6343,15 @@ state246 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    62 -> state228 err (i:as) is
-    _ -> state225 err (i:as) is
+    66 -> state247 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start247 :: Lexer
-start247 is = state247 (\ as is -> gotError as is) "" is
 state247 :: LexerState
 state247 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state247 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6369,17 +6378,15 @@ state247 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    57 -> state224 err (i:as) is
-    76 -> state226 err (i:as) is
-    63 -> state248 err (i:as) is
-    64 -> state251 err (i:as) is
-    _ -> state225 err (i:as) is
+    65 -> state248 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start248 :: Lexer
-start248 is = state248 (\ as is -> gotError as is) "" is
 state248 :: LexerState
 state248 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state248 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6406,15 +6413,15 @@ state248 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    66 -> state249 err (i:as) is
-    _ -> state225 err (i:as) is
+    67 -> state238 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start249 :: Lexer
-start249 is = state249 (\ as is -> gotError as is) "" is
 state249 :: LexerState
 state249 err as [] = err as []
+  where err _ _ = output Reservedid as (start1 [])
 state249 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6441,15 +6448,16 @@ state249 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    65 -> state250 err (i:as) is
-    _ -> state225 err (i:as) is
+    57 -> state250 err (i:as) is
+    68 -> state253 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Reservedid as (start1 iis)
 
-start250 :: Lexer
-start250 is = state250 (\ as is -> gotError as is) "" is
 state250 :: LexerState
 state250 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state250 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6476,15 +6484,15 @@ state250 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    67 -> state240 err (i:as) is
-    _ -> state225 err (i:as) is
+    60 -> state251 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start251 :: Lexer
-start251 is = state251 (\ as is -> gotError as is) "" is
 state251 :: LexerState
 state251 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state251 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6513,14 +6521,13 @@ state251 err as iis@(i:is) =
     75 -> err as iis
     76 -> err as iis
     77 -> err as iis
-    57 -> state252 err (i:as) is
-    68 -> state255 err (i:as) is
-    _ -> state225 err (i:as) is
+    73 -> state252 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start252 :: Lexer
-start252 is = state252 (\ as is -> gotError as is) "" is
 state252 :: LexerState
 state252 err as [] = err as []
+  where err _ _ = output Reservedid as (start1 [])
 state252 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6547,15 +6554,16 @@ state252 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    60 -> state253 err (i:as) is
-    _ -> state225 err (i:as) is
+    62 -> state223 err (i:as) is
+    67 -> state223 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Reservedid as (start1 iis)
 
-start253 :: Lexer
-start253 is = state253 (\ as is -> gotError as is) "" is
 state253 :: LexerState
 state253 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state253 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6582,15 +6590,15 @@ state253 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    73 -> state254 err (i:as) is
-    _ -> state225 err (i:as) is
+    69 -> state254 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start254 :: Lexer
-start254 is = state254 (\ as is -> gotError as is) "" is
 state254 :: LexerState
 state254 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state254 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6619,14 +6627,13 @@ state254 err as iis@(i:is) =
     75 -> err as iis
     76 -> err as iis
     77 -> err as iis
-    62 -> state224 err (i:as) is
-    67 -> state224 err (i:as) is
-    _ -> state225 err (i:as) is
+    52 -> state255 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start255 :: Lexer
-start255 is = state255 (\ as is -> gotError as is) "" is
 state255 :: LexerState
 state255 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state255 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6653,15 +6660,15 @@ state255 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    69 -> state256 err (i:as) is
-    _ -> state225 err (i:as) is
+    64 -> state256 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start256 :: Lexer
-start256 is = state256 (\ as is -> gotError as is) "" is
 state256 :: LexerState
 state256 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state256 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6688,15 +6695,15 @@ state256 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    52 -> state257 err (i:as) is
-    _ -> state225 err (i:as) is
+    54 -> state227 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start257 :: Lexer
-start257 is = state257 (\ as is -> gotError as is) "" is
 state257 :: LexerState
 state257 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state257 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6723,15 +6730,15 @@ state257 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    64 -> state258 err (i:as) is
-    _ -> state225 err (i:as) is
+    56 -> state238 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start258 :: Lexer
-start258 is = state258 (\ as is -> gotError as is) "" is
 state258 :: LexerState
 state258 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state258 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6758,15 +6765,15 @@ state258 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    54 -> state229 err (i:as) is
-    _ -> state225 err (i:as) is
+    65 -> state259 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start259 :: Lexer
-start259 is = state259 (\ as is -> gotError as is) "" is
 state259 :: LexerState
 state259 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state259 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6793,15 +6800,15 @@ state259 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    56 -> state240 err (i:as) is
-    _ -> state225 err (i:as) is
+    55 -> state260 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start260 :: Lexer
-start260 is = state260 (\ as is -> gotError as is) "" is
 state260 :: LexerState
 state260 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state260 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6828,15 +6835,15 @@ state260 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    65 -> state261 err (i:as) is
-    _ -> state225 err (i:as) is
+    70 -> state261 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start261 :: Lexer
-start261 is = state261 (\ as is -> gotError as is) "" is
 state261 :: LexerState
 state261 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state261 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6863,15 +6870,15 @@ state261 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    55 -> state262 err (i:as) is
-    _ -> state225 err (i:as) is
+    62 -> state227 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start262 :: Lexer
-start262 is = state262 (\ as is -> gotError as is) "" is
 state262 :: LexerState
 state262 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state262 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6898,15 +6905,15 @@ state262 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    70 -> state263 err (i:as) is
-    _ -> state225 err (i:as) is
+    56 -> state263 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start263 :: Lexer
-start263 is = state263 (\ as is -> gotError as is) "" is
 state263 :: LexerState
 state263 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state263 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6933,15 +6940,15 @@ state263 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    62 -> state229 err (i:as) is
-    _ -> state225 err (i:as) is
+    72 -> state264 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start264 :: Lexer
-start264 is = state264 (\ as is -> gotError as is) "" is
 state264 :: LexerState
 state264 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state264 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -6968,15 +6975,15 @@ state264 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    56 -> state265 err (i:as) is
-    _ -> state225 err (i:as) is
+    69 -> state265 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start265 :: Lexer
-start265 is = state265 (\ as is -> gotError as is) "" is
 state265 :: LexerState
 state265 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state265 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -7003,15 +7010,15 @@ state265 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    72 -> state266 err (i:as) is
-    _ -> state225 err (i:as) is
+    74 -> state266 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start266 :: Lexer
-start266 is = state266 (\ as is -> gotError as is) "" is
 state266 :: LexerState
 state266 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state266 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -7038,15 +7045,15 @@ state266 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    69 -> state267 err (i:as) is
-    _ -> state225 err (i:as) is
+    66 -> state227 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start267 :: Lexer
-start267 is = state267 (\ as is -> gotError as is) "" is
 state267 :: LexerState
 state267 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state267 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -7073,15 +7080,15 @@ state267 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    74 -> state268 err (i:as) is
-    _ -> state225 err (i:as) is
+    57 -> state223 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start268 :: Lexer
-start268 is = state268 (\ as is -> gotError as is) "" is
 state268 :: LexerState
 state268 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state268 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -7108,15 +7115,16 @@ state268 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    66 -> state229 err (i:as) is
-    _ -> state225 err (i:as) is
+    74 -> state266 err (i:as) is
+    59 -> state269 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start269 :: Lexer
-start269 is = state269 (\ as is -> gotError as is) "" is
 state269 :: LexerState
 state269 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state269 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -7143,15 +7151,15 @@ state269 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    57 -> state224 err (i:as) is
-    76 -> state226 err (i:as) is
-    _ -> state225 err (i:as) is
+    56 -> state270 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start270 :: Lexer
-start270 is = state270 (\ as is -> gotError as is) "" is
 state270 :: LexerState
 state270 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state270 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -7178,16 +7186,15 @@ state270 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    74 -> state268 err (i:as) is
-    59 -> state271 err (i:as) is
-    _ -> state225 err (i:as) is
+    64 -> state223 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start271 :: Lexer
-start271 is = state271 (\ as is -> gotError as is) "" is
 state271 :: LexerState
 state271 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state271 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -7214,15 +7221,15 @@ state271 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    56 -> state272 err (i:as) is
-    _ -> state225 err (i:as) is
+    59 -> state272 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start272 :: Lexer
-start272 is = state272 (\ as is -> gotError as is) "" is
 state272 :: LexerState
 state272 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state272 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -7249,15 +7256,15 @@ state272 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    64 -> state224 err (i:as) is
-    76 -> state226 err (i:as) is
-    _ -> state225 err (i:as) is
+    56 -> state273 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start273 :: Lexer
-start273 is = state273 (\ as is -> gotError as is) "" is
 state273 :: LexerState
 state273 err as [] = err as []
+  where err _ _ = output Varid as (start1 [])
 state273 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
@@ -7284,1886 +7291,25 @@ state273 err as iis@(i:is) =
     49 -> err as iis
     50 -> err as iis
     75 -> err as iis
+    76 -> err as iis
     77 -> err as iis
-    76 -> state226 err (i:as) is
-    59 -> state274 err (i:as) is
-    _ -> state225 err (i:as) is
+    67 -> state227 err (i:as) is
+    _ -> state224 err (i:as) is
+  where err _ _ = output Varid as (start1 iis)
 
-start274 :: Lexer
-start274 is = state274 (\ as is -> gotError as is) "" is
 state274 :: LexerState
 state274 err as [] = err as []
+  where err _ _ = output Special as (start1 [])
 state274 err as iis@(i:is) =
   case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    77 -> err as iis
-    76 -> state226 err (i:as) is
-    56 -> state275 err (i:as) is
-    _ -> state225 err (i:as) is
-
-start275 :: Lexer
-start275 is = state275 (\ as is -> gotError as is) "" is
-state275 :: LexerState
-state275 err as [] = err as []
-state275 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    77 -> err as iis
-    76 -> state226 err (i:as) is
-    67 -> state229 err (i:as) is
-    _ -> state225 err (i:as) is
-
-state276 :: LexerState
-state276 err as [] = err as []
-  where err _ _ = output Reservedid as (start1 [])
-state276 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    _ -> state277 err (i:as) is
-  where err _ _ = output Reservedid as (start1 iis)
-
-state277 :: LexerState
-state277 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state277 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state278 :: LexerState
-state278 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state278 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    52 -> state279 err (i:as) is
-    62 -> state281 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state279 :: LexerState
-state279 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state279 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    68 -> state280 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state280 :: LexerState
-state280 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state280 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    56 -> state276 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state281 :: LexerState
-state281 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state281 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    52 -> state282 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state282 :: LexerState
-state282 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state282 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    68 -> state283 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state283 :: LexerState
-state283 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state283 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    68 -> state276 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state284 :: LexerState
-state284 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state284 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    65 -> state276 err (i:as) is
-    52 -> state285 err (i:as) is
-    56 -> state287 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state285 :: LexerState
-state285 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state285 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    69 -> state286 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state286 :: LexerState
-state286 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state286 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    52 -> state276 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state287 :: LexerState
-state287 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state287 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    57 -> state288 err (i:as) is
-    67 -> state292 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state288 :: LexerState
-state288 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state288 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    52 -> state289 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state289 :: LexerState
-state289 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state289 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    70 -> state290 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state290 :: LexerState
-state290 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state290 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    62 -> state291 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state291 :: LexerState
-state291 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state291 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    69 -> state276 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state292 :: LexerState
-state292 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state292 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    60 -> state293 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state293 :: LexerState
-state293 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state293 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    71 -> state294 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state294 :: LexerState
-state294 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state294 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    60 -> state295 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state295 :: LexerState
-state295 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state295 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    64 -> state296 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state296 :: LexerState
-state296 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state296 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    58 -> state276 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state297 :: LexerState
-state297 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state297 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    62 -> state279 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state298 :: LexerState
-state298 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state298 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    57 -> state276 err (i:as) is
-    63 -> state299 err (i:as) is
-    64 -> state302 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state299 :: LexerState
-state299 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state299 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    66 -> state300 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state300 :: LexerState
-state300 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state300 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    65 -> state301 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state301 :: LexerState
-state301 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state301 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    67 -> state291 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state302 :: LexerState
-state302 err as [] = err as []
-  where err _ _ = output Reservedid as (start1 [])
-state302 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    57 -> state303 err (i:as) is
-    68 -> state306 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Reservedid as (start1 iis)
-
-state303 :: LexerState
-state303 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state303 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    60 -> state304 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state304 :: LexerState
-state304 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state304 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    73 -> state305 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state305 :: LexerState
-state305 err as [] = err as []
-  where err _ _ = output Reservedid as (start1 [])
-state305 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    62 -> state276 err (i:as) is
-    67 -> state276 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Reservedid as (start1 iis)
-
-state306 :: LexerState
-state306 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state306 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    69 -> state307 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state307 :: LexerState
-state307 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state307 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    52 -> state308 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state308 :: LexerState
-state308 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state308 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    64 -> state309 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state309 :: LexerState
-state309 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state309 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    54 -> state280 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state310 :: LexerState
-state310 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state310 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    56 -> state291 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state311 :: LexerState
-state311 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state311 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    65 -> state312 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state312 :: LexerState
-state312 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state312 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    55 -> state313 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state313 :: LexerState
-state313 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state313 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    70 -> state314 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state314 :: LexerState
-state314 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state314 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    62 -> state280 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state315 :: LexerState
-state315 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state315 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    56 -> state316 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state316 :: LexerState
-state316 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state316 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    72 -> state317 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state317 :: LexerState
-state317 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state317 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    69 -> state318 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state318 :: LexerState
-state318 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state318 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    74 -> state319 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state319 :: LexerState
-state319 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state319 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    66 -> state280 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state320 :: LexerState
-state320 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state320 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    57 -> state276 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state321 :: LexerState
-state321 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state321 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    74 -> state319 err (i:as) is
-    59 -> state322 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state322 :: LexerState
-state322 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state322 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    56 -> state323 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state323 :: LexerState
-state323 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state323 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    64 -> state276 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state324 :: LexerState
-state324 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state324 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    59 -> state325 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state325 :: LexerState
-state325 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state325 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    56 -> state326 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state326 :: LexerState
-state326 err as [] = err as []
-  where err _ _ = output Varid as (start1 [])
-state326 err as iis@(i:is) =
-  case cclass i of
-    0 -> err as iis
-    1 -> err as iis
-    2 -> err as iis
-    3 -> err as iis
-    4 -> err as iis
-    5 -> err as iis
-    6 -> err as iis
-    7 -> err as iis
-    8 -> err as iis
-    9 -> err as iis
-    11 -> err as iis
-    12 -> err as iis
-    13 -> err as iis
-    14 -> err as iis
-    19 -> err as iis
-    20 -> err as iis
-    21 -> err as iis
-    22 -> err as iis
-    23 -> err as iis
-    47 -> err as iis
-    48 -> err as iis
-    49 -> err as iis
-    50 -> err as iis
-    75 -> err as iis
-    76 -> err as iis
-    77 -> err as iis
-    67 -> state280 err (i:as) is
-    _ -> state277 err (i:as) is
-  where err _ _ = output Varid as (start1 iis)
-
-state327 :: LexerState
-state327 err as [] = err as []
-  where err _ _ = output Special as (start1 [])
-state327 err as iis@(i:is) =
-  case cclass i of
-    13 -> state328 err (i:as) is
+    13 -> state275 err (i:as) is
     _ -> err as iis
   where err _ _ = output Special as (start1 iis)
 
-state328 :: LexerState
-state328 err as is = nestedComment as is state329
+state275 :: LexerState
+state275 err as is = nestedComment as is state276
 
-state329 :: LexerState
-state329 err as is = output NestedComment as (start1 is)
+state276 :: LexerState
+state276 err as is = output NestedComment as (start1 is)
 
 

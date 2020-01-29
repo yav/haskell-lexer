@@ -15,9 +15,7 @@ data Token
   | StringLit   -- ^ String literal
 
 
-  | QQQStart    -- ^ Start qualified quote: @[|A.name|@
-  | QQStart     -- ^ Start unqualified quote: @[|name|@
-  | QQBody      -- ^ The body of a quote: @text|]@
+  | QQuote      -- ^ Quasi quote: @[|text|stuff|]@
 
   | Qvarid      -- ^ Qualified variable
   | Qconid      -- ^ Qualified constructor
