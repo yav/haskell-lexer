@@ -56,7 +56,7 @@ ncomment = opencom & o NestedCommentStart -- handled by calling an external func
 
 qquote = start & body
   where
-  start      = as "[|" & (qvarid ! varid) & as "|"
+  start      = as "[" & (qvarid ! varid) & as "|"
   body       = many bodyChunk & some (as "|") & as "]"
   bodyChunk  = many (notThis "|") ! bodyPipe
   bodyPipe   = some (as "|") & notThis "|]"
