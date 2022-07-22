@@ -5,7 +5,7 @@ License-file:   LICENSE
 Author:         Thomas Hallgren
 Maintainer:     diatchki@galois.com
 Category:       Language
-Synopsis:       A fully compliant Haskell 98 lexer.
+Synopsis:       A fully compliant Haskell 98 lexer
 Description:    A fully compliant Haskell 98 lexer.
 Build-type:     Simple
 Cabal-version:  >= 1.6
@@ -40,7 +40,6 @@ Library
                     Language.Haskell.Lexer.Position
 
   GHC-options:
-    -O2
     -Wall
     -fno-warn-unused-matches
 
