@@ -42,6 +42,7 @@ Library
   GHC-options:
     -Wall
     -fno-warn-unused-matches
+    -fno-warn-name-shadowing
 
   if impl(GHC >= 8.0)
     GHC-options:
