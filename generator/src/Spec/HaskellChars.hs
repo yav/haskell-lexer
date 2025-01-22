@@ -3,6 +3,10 @@ This module collects the definitions from the Lexical Syntax in appendix B.3
 of the (revised) Haskell 98 report that define sets of characters.
 These sets are referred to in the rest of the lexical syntax,
 which is given in module HaskellLexicalSyntax.
+
+A deviation is the more relaxed handling of certain unicode characters as in
+GHC, see https://downloads.haskell.org/ghc/9.12.1/docs/users_guide/bugs.html for
+details.
 -}
 
 module Spec.HaskellChars where
@@ -16,9 +20,10 @@ data HaskellChar
   = ASCII Char
   | UniWhite   -- any Unicode character defined as whitespace
   | UniSymbol  -- any Unicode symbol or punctuation
-  | UniDigit   -- any Unicode numeric
+  | UniDigit   -- any Unicode Decimal Number, Letter Number or Other Number
   | UniLarge   -- any uppercase or titlecase Unicode letter
-  | UniSmall   -- any Unicode lowercase letter
+  | UniSmall   -- any Unicode Lowercase Letter or Other Letter
+  | UniIdchar  -- any Unicode Modifier Letter or Non-Spacing Mark
   deriving (Eq,Ord{-,Show-})
 
 acs = map ASCII
@@ -48,6 +53,7 @@ ascDigit  = acs ['0'..'9']
 uniDigit  = [UniDigit]
 octit     = acs ['0'..'7']
 hexit     = digit ++ acs ['A'..'F'] ++ acs ['a'..'f']
+uniIdchar = [UniIdchar]
 
 ----
 
