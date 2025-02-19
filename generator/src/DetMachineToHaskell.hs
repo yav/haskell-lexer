@@ -62,7 +62,7 @@ stateToHaskell final ccinfo ste@(st,(_,oedges)) =
            startlhs st "is" & "=" & scall st err (show "") "is" & nl
       else nil
 
-    err = "("!"\\"&"as"&"is"&"->"&oedgesToHaskell "is" oedges !")"
+    err = "(" ! "\\"&"as"&"is"&"->"&oedgesToHaskell "is" oedges ! ")"
 
 stateToHaskell'' _ _ (st,([],oedges@(_:_))) =
   lhs st "is" & "=" & indented (oedgesToHaskell "is" oedges) & nl
@@ -138,7 +138,7 @@ class Show token => OutputFun token where
   output = default_output
 
 default_output token as next is =
-  "output" & show token & as & "("!startstate next & is !")"
+  "output" & show token & as & "(" ! startstate next & is ! ")"
 
 instance OutputFun Token where
   output token as next is =
