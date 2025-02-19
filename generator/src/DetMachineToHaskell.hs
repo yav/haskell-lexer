@@ -184,9 +184,10 @@ haskellCharCase e rhs defaultrhs cases =
       case u of
         UniWhite -> "isSpace"
         UniSymbol -> "(\\x -> isSymbol x || isPunctuation x)"
-        UniDigit -> "isDigit"
+        UniDigit -> "(\\x -> case generalCategory x of DecimalNumber -> True; LetterNumber -> True; OtherNumber -> True; _ -> False)"
         UniLarge -> "isUpper"
-        UniSmall -> "isLower"
+        UniSmall -> "(\\x -> isLower x || generalCategory x == OtherLetter)"
+        UniIdchar -> "(\\x -> case generalCategory x of ModifierLetter -> True; NonSpacingMark -> True; _ -> False)"
         ASCII _  -> error "tstFunc applied to an ASCII char"
 
 instance CaseOf Int where caseExp = simpleCase; errorValue=Just 0

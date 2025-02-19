@@ -122,9 +122,10 @@ cclass c =
     c | isAscii c -> 0
       | isSpace c -> 3
       | (\x -> isSymbol x || isPunctuation x) c -> 7
-      | isDigit c -> 18
-      | isLower c -> 61
+      | (\x -> case generalCategory x of DecimalNumber -> True; LetterNumber -> True; OtherNumber -> True; _ -> False) c -> 18
+      | (\x -> isLower x || generalCategory x == OtherLetter) c -> 61
       | isUpper c -> 78
+      | (\x -> case generalCategory x of ModifierLetter -> True; NonSpacingMark -> True; _ -> False) c -> 79
       | otherwise -> 0
 
 start1 :: Lexer
@@ -164,9 +165,10 @@ state1 err as iis@(i:is) =
     16 -> state87 err (i:as) is
     17 -> state87 err (i:as) is
     18 -> state87 err (i:as) is
+    0 -> err as iis
+    79 -> err as iis
     11 -> state73 err (i:as) is
     49 -> state73 err (i:as) is
-    0 -> err as iis
     8 -> state5 err (i:as) is
     10 -> state41 err (i:as) is
     13 -> state74 err (i:as) is
@@ -238,6 +240,7 @@ state5 err as iis@(i:is) =
     3 -> err as iis
     4 -> err as iis
     5 -> err as iis
+    79 -> err as iis
     8 -> state6 err (i:as) is
     48 -> state7 err (i:as) is
     _ -> state5 err (i:as) is
@@ -318,6 +321,7 @@ state10 err as iis@(i:is) =
     3 -> err as iis
     4 -> err as iis
     5 -> err as iis
+    79 -> err as iis
     15 -> state10 err (i:as) is
     16 -> state10 err (i:as) is
     17 -> state10 err (i:as) is
@@ -590,6 +594,7 @@ state36 err as iis@(i:is) =
     3 -> err as iis
     4 -> err as iis
     5 -> err as iis
+    79 -> err as iis
     15 -> state36 err (i:as) is
     16 -> state36 err (i:as) is
     17 -> state36 err (i:as) is
@@ -649,6 +654,7 @@ state39 err as iis@(i:is) =
     3 -> err as iis
     4 -> err as iis
     5 -> err as iis
+    79 -> err as iis
     8 -> state6 err (i:as) is
     48 -> state7 err (i:as) is
     _ -> state5 err (i:as) is
@@ -666,6 +672,7 @@ state41 err as iis@(i:is) =
     4 -> err as iis
     5 -> err as iis
     10 -> err as iis
+    79 -> err as iis
     48 -> state44 err (i:as) is
     _ -> state42 err (i:as) is
 
@@ -1112,6 +1119,7 @@ state76 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
     3 -> err as iis
+    79 -> err as iis
     2 -> state77 err (i:as) is
     4 -> state77 err (i:as) is
     5 -> state78 err (i:as) is
@@ -1504,6 +1512,7 @@ state98 err as iis@(i:is) =
     47 -> err as iis
     49 -> err as iis
     75 -> err as iis
+    79 -> err as iis
     52 -> state111 err (i:as) is
     53 -> state111 err (i:as) is
     57 -> state111 err (i:as) is
@@ -3811,6 +3820,7 @@ state166 err as [] = err as []
 state166 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
+    79 -> err as iis
     76 -> state169 err (i:as) is
     _ -> state166 err (i:as) is
 
@@ -3821,6 +3831,7 @@ state169 err as [] = err as []
 state169 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
+    79 -> err as iis
     76 -> state169 err (i:as) is
     49 -> state172 err (i:as) is
     _ -> state166 err (i:as) is

@@ -73,7 +73,7 @@ qquote = start & body
 
 varid = a small & idtail -! reservedid
 conid = a large & idtail
-idtail = many (a small ! a large ! a digit ! aa "'")
+idtail = many (a small ! a large ! a digit ! a uniIdchar ! aa "'")
 
 reservedid =
   ass [ "case", "class", "data", "default", "deriving", "do", "else",
