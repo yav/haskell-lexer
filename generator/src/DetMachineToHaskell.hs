@@ -9,7 +9,7 @@ import MUtils(collectBySnd)
 import Debug.Trace(trace)
 
 dfaToHaskell charclasses modname imports funname ((init,final),DFA dfa) =
-    "module" & modname & "("!funname!")" & "where" & nl &
+    "module" & modname & "(" ! funname ! ")" & "where" & nl &
     vmap ("import"&) imports & nl &
     "type" & "Output" & "=" & "[(Token,String)]" & nl &
     "type" & "Input" & "=" & "String" & nl &
@@ -33,11 +33,11 @@ charClassFunToHaskell ccs =
     "cclass" & "c" & "=" & nl &
     indented (haskellCharCase "c" show "0" ccs) & nl
 
-state st = "state"!st
+state st = "state" ! st
 scall st err acc is = state st & err & acc & is -- state function call
 lhs st is = scall st "err" "as" is -- lhs of state function
 
-startstate st = "start"!st
+startstate st = "start" ! st
 start st is = startstate st & is -- (re)start from state
 startlhs st is = start st is -- lhs of state start function
 
@@ -62,7 +62,7 @@ stateToHaskell final ccinfo ste@(st,(_,oedges)) =
            startlhs st "is" & "=" & scall st err (show "") "is" & nl
       else nil
 
-    err = "(" ! "\\"&"as"&"is"&"->"&oedgesToHaskell "is" oedges ! ")"
+    err = "(" ! "\\" & "as" & "is" & "->" & oedgesToHaskell "is" oedges ! ")"
 
 stateToHaskell'' _ _ (st,([],oedges@(_:_))) =
   lhs st "is" & "=" & indented (oedgesToHaskell "is" oedges) & nl
@@ -126,7 +126,7 @@ oedgesToHaskell' as is oedges0 =
     oedge = last oedges -- give priority to later tokens in the token data type
     msg = "Machine is nondeterministic: "++show oedges
 oedgeToHaskell as is (os,st) =
--- "("!show os!","&"reverse"&"as"!")"&":"&state st & show "" & is
+-- "(" ! show os ! "," & "reverse" & "as" ! ")" & ":"&state st & show "" & is
   output os (pr as) (pr st) (pr is)
 
 
