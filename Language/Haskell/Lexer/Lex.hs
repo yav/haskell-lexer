@@ -1119,7 +1119,6 @@ state76 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
     3 -> err as iis
-    79 -> err as iis
     2 -> state77 err (i:as) is
     4 -> state77 err (i:as) is
     5 -> state78 err (i:as) is
@@ -3820,7 +3819,6 @@ state166 err as [] = err as []
 state166 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
-    79 -> err as iis
     76 -> state169 err (i:as) is
     _ -> state166 err (i:as) is
 
@@ -3831,7 +3829,6 @@ state169 err as [] = err as []
 state169 err as iis@(i:is) =
   case cclass i of
     0 -> err as iis
-    79 -> err as iis
     76 -> state169 err (i:as) is
     49 -> state172 err (i:as) is
     _ -> state166 err (i:as) is
@@ -7369,5 +7366,4 @@ state274 err as is = nestedComment as is state275
 
 state275 :: LexerState
 state275 err as is = output NestedComment as (start1 is)
-
 
